@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Juego 2D - Colisiones</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<main class="contenedor">
+		<!-- Lienzo donde se dibuja el juego -->
+		<canvas id="game" width="600" height="400"></canvas>
+
+		<!-- Panel lateral: puntaje e historial -->
+		<aside class="panel">
+			<h2>Puntaje</h2>
+			<p id="puntajeActual" class="puntaje">0</p>
+			<p class="mejor">Mejor puntaje: <span id="mejorPuntaje">0</span></p>
+
+			<h2>Historial</h2>
+			<ol id="historial"></ol>
+			<button id="borrarHistorial" type="button">Borrar historial</button>
+
+			<p class="ayuda">
+				Flechas: mover<br>
+				ENTER: jugar<br>
+				M: silenciar / activar sonido
+			</p>
+		</aside>
+	</main>
+
+	<footer>
+		Desarrollado por <strong>Lizbeth Huaman</strong> &middot; Diseño y Desarrollo de Juegos Interactivos II &middot; UTP
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
